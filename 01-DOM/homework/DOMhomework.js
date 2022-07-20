@@ -18,10 +18,12 @@ nombre.innerHTML = 'Aplicación creada por Leonardo';
 // 2) 'complete'    : debe setearse en false
 // Ayuda: usar 'this' en el constructor
 
-function ToDo(descripcion) {
+function ToDo(description) {
   // Tu código acá:
-  this.descripcion = descripcion;
+  this.description = description;
   this.complete = false;
+  console.log('creo un toDo');
+  console.log(description);
 }
 
 
@@ -30,7 +32,7 @@ function ToDo(descripcion) {
 // Debe setear el atributo 'complete' del ToDo en true
 
 // Tu código acá:
-ToDo.prototype.completeTodo = function () {
+ToDo.prototype.completeToDo = function () {
   this.complete = true;
 }
 
@@ -58,15 +60,25 @@ function buildToDo(todo, index) {
 
   let toDoShell = document.createElement('div');
   let toDoText = document.createElement('span');
+  let checkbox = document.createElement('input');
+
+
   
-  toDoShell.className = 'toDoShell'
-  toDoText.id = index;
-  toDoText.innerHTML = todo.descripcion;
+  toDoShell.className = 'toDoShell';
+  checkbox.id = index;
+  toDoText.innerHTML = todo.description;
+  checkbox.type = 'checkbox';
   
-  if (todo.complete) toDoText.className = 'completeText';
-  
-  toDoText.addEventListener('click', completeToDo)
+
+  if (todo.complete) {
+    toDoText.className = 'completeText';
+    checkbox.checked = true;  
+  }
+
+  checkbox.addEventListener('click', completeToDo);
+  toDoText.addEventListener('click', completeToDo);
   toDoShell.appendChild(toDoText);
+  toDoShell.appendChild(checkbox)
   
   return toDoShell;
 
@@ -99,12 +111,12 @@ function displayToDos() {
   // Tu código acá:
   let toDoContainer = document.querySelector('#toDoContainer')
   toDoContainer.innerHTML = '';
-  // buildToDos(toDoItems).map(ele => toDoContainer.appendChild(ele));
-  let array = buildToDos(toDoItems);
-  for (let i = 0; i < array.length; i++) {
-    toDoContainer.appendChild(array[i]);
+  buildToDos(toDoItems).map(ele => toDoContainer.appendChild(ele));
+  // let array = buildToDos(toDoItems);
+  // for (let i = 0; i < array.length; i++) {
+  //   toDoContainer.appendChild(array[i]);
 
-  }
+  // }
 }
 
 
@@ -152,7 +164,7 @@ function completeToDo(event) {
   // DESCOMENTAR LA SIGUIENTE LINEA
   const index = event.target.id;
   // Tu código acá:
-  toDoItems[index].completeToDo;
+  toDoItems[index].completeToDo();
   displayToDos();
 }
 
