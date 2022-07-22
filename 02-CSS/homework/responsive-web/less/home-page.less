@@ -1,6 +1,7 @@
 // Conteindo del Home
 
 .home {
+  
 
   .intro {
 
@@ -9,15 +10,18 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
+    }
+    .main-img {
+      .border-img();
+      display: inline-flex;
+      width: 100%;
+      padding: 0 10px;
     }
 
   }
 
-  .main-img {
-    .border-img();
-  }
-  
+
   .music-images {
     display: flex;
     flex-wrap: wrap;
@@ -59,10 +63,20 @@
 
       p {
         margin-bottom: 26px;
-      }
+      }        
 
       .btn {
+        .btn(10px, 10px, @btn-bg-color);        
+        color: #fff;
+        font-size: @btn-links;
+        width: 9rem;
+        border-radius: 5px;
+        &:hover{
+          background-color: @river-bend;
+          cursor: pointer;
+        }
       }
+
     }
 
     .actual-img {

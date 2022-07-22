@@ -166,7 +166,7 @@ p {
 nav {
   text-align: center;
   padding: 15px 0;
-  background-color: #f4f4f4;
+  background-color: #F6F6F6;
 }
 h1 {
   font-size: 3.2rem;
@@ -186,7 +186,7 @@ a {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -200,8 +200,11 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .main-img {
+.home .intro .main-img {
   border-radius: 20px;
+  display: inline-flex;
+  width: 100%;
+  padding: 0 10px;
 }
 .home .music-images {
   display: flex;
@@ -238,6 +241,18 @@ footer {
 }
 .home .actual .actual-text p {
   margin-bottom: 26px;
+}
+.home .actual .actual-text .btn {
+  padding: 10px 10px;
+  background-color: #22283A;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 9rem;
+  border-radius: 5px;
+}
+.home .actual .actual-text .btn:hover {
+  background-color: #454A59;
+  cursor: pointer;
 }
 .home .actual .actual-img {
   width: 46%;
