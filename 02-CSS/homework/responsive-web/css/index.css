@@ -168,19 +168,21 @@ nav {
   padding: 15px 0;
   background-color: #F6F6F6;
 }
-h1 {
+nav h1 {
   font-size: 3.2rem;
   padding: 15px;
 }
-ul {
+nav ul {
   display: flex;
   justify-content: center;
+  place-content: center;
 }
-li {
-  padding-left: 15px;
+nav ul li {
+  padding-left: 7px;
+  padding-right: 7px;
   font-size: 1.5rem;
 }
-a {
+nav ul li a {
   text-decoration: none;
   color: #000;
 }
@@ -206,6 +208,11 @@ footer {
   width: 100%;
   padding: 0 10px;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
+  }
+}
 .home .music-images {
   display: flex;
   flex-wrap: wrap;
@@ -216,6 +223,16 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .music-images .tecnologia,
+  .home .music-images .ondas {
+    display: none;
+  }
+  .home .music-images .auricular {
+    width: 100%;
+    padding: 10px;
+  }
 }
 .home .musica-nueva {
   padding: 15px;
@@ -232,6 +249,12 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .actual {
+    flex-direction: column-reverse;
+    padding: 0px 10px;
+  }
 }
 .home .actual .actual-text {
   width: 50%;
@@ -254,6 +277,17 @@ footer {
   background-color: #454A59;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .actual .actual-text .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .actual .actual-text {
+    width: 100%;
+  }
+}
 .home .actual .actual-img {
   width: 46%;
   margin-left: 4%;
@@ -262,4 +296,13 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .actual .actual-img {
+    width: 100%;
+    margin: 0%;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
