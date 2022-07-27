@@ -76,7 +76,7 @@ function buildToDo(todo, index) {
   }
 
   checkbox.addEventListener('click', completeToDo);
-  toDoText.addEventListener('click', completeToDo);
+  // toDoText.addEventListener('click', completeToDo);
   toDoShell.appendChild(toDoText);
   toDoShell.appendChild(checkbox)
   
