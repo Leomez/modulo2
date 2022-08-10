@@ -1,0 +1,7 @@
+.card {
+    border: solid 1px rgb(29, 29, 29);
+    width: 20rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
