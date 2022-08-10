@@ -1,6 +1,15 @@
+body{
+  background-image: url(./img/horizonte-nublado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .App {
+  display: block;
   text-align: center;
-  align-items: center;
+  align-items: center;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }
 
 .App-logo {
@@ -29,10 +38,18 @@
   color: #61dafb;
 }
 
+.card {
+  display: none;
+  align-items: center;
+  width: auto;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

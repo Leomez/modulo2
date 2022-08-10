@@ -1,5 +1,5 @@
 import React from 'react';
-
+import s from '../css/searchBar.module.css';
 export default function SearchBar(props) {
   // acá va tu código
   return <div>

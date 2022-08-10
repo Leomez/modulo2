@@ -4,10 +4,22 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.contenedor-titulo{
+  display: grid;
+  justify-content: center;  
+}
+
+.titulo{
+  color: #fff;
+}
+.subtitulo{
+  color: rgb(2, 210, 247);
 }

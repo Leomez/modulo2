@@ -1,7 +1,35 @@
-.card {
+
+
+.card {    
     border: solid 1px rgb(29, 29, 29);
-    width: 20rem;
+    width: 15rem;
     border-radius: 5px;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    text-shadow: 0 0 5px rgb(0 178 255);
+    background-color: rgba(114, 150, 204, 0.473);
+     
+}
+
+.temp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.close{
+    border: none;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 71, 71);
+    position: relative;
+    left: 6rem;
+    top: 5px;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;    
+}
+
+.close div {
+    display: inline-block;
+    vertical-align:text-bottom;
 }
