@@ -8,6 +8,7 @@
     align-items: center; 
     text-shadow: 0 0 5px rgb(0 178 255);
     background-color: rgba(114, 150, 204, 0.473);
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
      
 }
 
@@ -17,16 +18,26 @@
 }
 
 .close{
-    border: none;
-    border-radius: 5px;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(255, 71, 71);
+    /* border: solid 1px #000; */
+    /* border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 71, 71);   
+    margin-bottom: 0.5rem;
+    border-radius: 5px;  
+    padding-bottom: 3px;   */
     position: relative;
     left: 6rem;
     top: 5px;
-    margin-bottom: 0.5rem;
-    border-radius: 50%;    
+    background-color: red;    
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    margin: 4px;    
+    border-radius: 8px;
+    width: 25px;
+    text-align:center;
+    font-weight: bold;
 }
 
 .close div {

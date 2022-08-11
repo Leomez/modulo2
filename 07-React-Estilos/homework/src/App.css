@@ -44,6 +44,13 @@ body{
   width: auto;
 }
 
+.cards-container{
+  /* border: solid 1px blue; */
+  margin-top: 100px;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
 
 @keyframes App-logo-spin {
   from {

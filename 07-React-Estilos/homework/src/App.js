@@ -30,7 +30,7 @@ function App() {
           cities={data}
         />
       </div>
-      <hr />
+      
       
     </div>
   );

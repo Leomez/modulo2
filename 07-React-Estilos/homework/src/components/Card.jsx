@@ -1,14 +1,15 @@
 import React from 'react';
 import s from "../css/card.module.css";
 
+
 export default function Card(props) {
   let { max, min, name, img, onClose } = props
   if (!props) {
     <h4>Loading...</h4>
   }
 
-  return <div className={s.card}>
-    <button className={s.close} onClick={onClose}><div>x</div></button>    
+  return <div className={s.card}>    
+    <button className={s.close} onClick={onClose}><div>x</div></button>
     <h1>{name}</h1>
     <div className={s.temp}>
       <div>
