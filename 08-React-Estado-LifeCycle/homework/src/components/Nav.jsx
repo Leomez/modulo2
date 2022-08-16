@@ -12,7 +12,7 @@ function Nav({ onSearch }) {
       </a>
       <div>
         <SearchBar
-          onSearch={(ciudad) => alert(ciudad)}
+          onSearch={onSearch}
         />
       </div>
     </nav>

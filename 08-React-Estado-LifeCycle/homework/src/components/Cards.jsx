@@ -4,20 +4,19 @@ import Card from './Card.jsx';
 
 export default function Cards({ cities, onClose }) {
   if (cities) {
-    console.log(cities[0].id);
+    console.log(cities);
     return (
       <div className={s.cards}>
         {cities.map(c => {
           console.log(c.id);
           return <Card
-            max={c.main.temp_max}
-            min={c.main.temp_min}
+            max={c.max}
+            min={c.min}
             name={c.name}
-            img={c.weather[0].icon}
+            img={c.img}
             onClose={() => onClose(c.id)}
             key={c.id}
           />
-
         }
 
         )}
