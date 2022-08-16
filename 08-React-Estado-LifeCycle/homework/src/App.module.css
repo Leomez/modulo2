@@ -1,0 +1,61 @@
+.App {
+  display: block;
+  text-align: center;
+  align-items: center;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+body{
+  background-image: url(./img/horizonte-nublado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.card {
+  display: none;
+  align-items: center;
+  width: auto;
+}
+
+.cardsContainer{
+  /* border: solid 1px blue; */
+  margin-top: 100px;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.contenedorTitulo{
+  display: grid;
+  justify-content: center;  
+  padding: 50px 0;
+  margin-top: 25px;
+}
+
+.titulo{
+  color: #fff;
+}
+.subtitulo{
+  color: rgb(2, 210, 247);
+}

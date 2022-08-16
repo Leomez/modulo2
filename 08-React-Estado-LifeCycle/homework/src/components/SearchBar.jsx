@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import s from './SearchBar.module.css';
 
-export default function SearchBar({onSearch}) {
+
+export default function SearchBar({ onSearch }) {
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
@@ -10,7 +12,7 @@ export default function SearchBar({onSearch}) {
         type="text"
         placeholder="Ciudad..."
       />
-      <input type="submit" value="Agregar" />
+      <input className={s.button} type="submit" value="Agregar" />
     </form>
   );
 }

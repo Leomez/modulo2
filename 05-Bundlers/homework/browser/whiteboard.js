@@ -1,4 +1,4 @@
-(function () {
+
 
   window.whiteboard = new window.EventEmitter();
 
@@ -113,4 +113,5 @@
 
   };
 
-})();
+
+module.export = whiteboard
