@@ -6,6 +6,7 @@ export default function Cards({ cities, onClose }) {
   if (cities) {
     console.log(cities);
     return (
+      
       <div className={s.cards}>
         {cities.map(c => {
           console.log(c.id);
