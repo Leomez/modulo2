@@ -1,0 +1,32 @@
+.card {
+  margin: 20px;
+  width: 18rem;
+  border: solid 1px rgb(29, 29, 29);
+  border-radius: 5px;
+  text-shadow: 0 0 5px rgb(0 178 255);
+  background-color: rgba(114, 150, 204, 0.473);
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+  color: aliceblue;
+}
+
+.cardTitle {
+  margin-bottom: 15px;
+}
+
+.closeIcon {
+  /* position: relative; */
+  /* left: 6rem; */
+  /* top: 5px; */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+  /* background-color: red;     */
+  color: white;
+  font-weight: bold;
+}
+
+.cardBody {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}

@@ -1,0 +1,27 @@
+.App {
+  display: block;
+  text-align: center;
+  align-items: center;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+body{
+  background-image: url(../img/horizonte-nublado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .row {
+  display: flex;
+  justify-content: center;
+} */
+
+.cardsContainer{
+  /* border: solid 1px blue; */
+  margin-top: 100px;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
