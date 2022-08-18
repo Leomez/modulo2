@@ -3,7 +3,7 @@ import s from "./Card.module.css";
 import {Link} from "react-router-dom";
 
 export default function Card (props) {
-  let {min, max, name, img, id, onClose} = props 
+  let {min, max, name, img, onClose, id} = props 
   return (
       <div className={`${s.card}`}>
         <div className={s.closeIcon}>
