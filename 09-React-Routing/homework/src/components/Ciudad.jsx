@@ -21,7 +21,7 @@ export default function Ciudad({ city }) {
             </div>
             <div className="d-flex justify-content-center p-3">
                 <h1>{temp}°</h1>
-                <span>clima: {weather}<img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt={weather} /></span>
+                <span>{weather}<img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt={weather} /></span>
             </div>
             <h4>Viento: {wind}km/h</h4>
         </div>

@@ -52,11 +52,11 @@ function App() {
       <Route path='/'
         render={() => <Nav onSearch={onSearch} />}
       />
-      <Route path='/about' component={About}
-      />
       <div>
         <Header></Header>
       </div>
+      <Route path='/about' component={About}
+      />
 
       <Route exact path='/'>
         <Cards cities={ciudades} onClose={onClose} />

@@ -14,7 +14,7 @@ export default function Card (props) {
           <Link to={`/ciudad/${id}`}>
             <h2 className={s.cardTitle}>{name}</h2>          
           </Link>
-          <div className="row">
+          <div className="row p-5">
             <div className="col-sm-4 col-md-4 col-lg-4">
               <h5>Min</h5>
               <span>{min}°</span>
