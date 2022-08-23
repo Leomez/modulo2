@@ -14,6 +14,7 @@ a:hover{
   background-color: rgba(114, 150, 204, 0.473);
   box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
   color: aliceblue;
+  font-weight: bold;
 }
 
 .cardTitle {
