@@ -15,7 +15,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=sp,es`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`)
       .then(d => d.json())
       .then((datos) => {
         console.log(datos);
@@ -52,21 +52,21 @@ function App() {
       <Route path='/'
         render={() => <Nav onSearch={onSearch} />}
       />
-      <Route path='/about' component={About}
-      />
       <div>
         <Header></Header>
       </div>
-
-      <Route path='/ciudades'
-        render={() => <div className={s.cardsContainer}>
-            <Cards
-              cities={ciudades}
-              onClose={onClose}
-            />
-          </div>
-        }
+      <Route path='/about' component={About}
       />
+
+      <Route exact path='/'>
+        <Cards cities={ciudades} onClose={onClose} />
+      </Route>
+
+      <Route exact path='/ciudad/:ciudadId'
+        render={({match}) => <Ciudad city={onFilter(match.params.ciudadId)} onClose={onClose}/>}
+      />
+
+
 
     </div>
   );

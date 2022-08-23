@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Nav({ onSearch }) {
   return (
-    <nav className='navbar navbar-dark bg-dark'>
+    <nav className='navbar navbar-dark bg-dark fixed-top'>
       <Link to='/'>
         <span className="navbar-brand"><img src={Logo} alt="Logo Henry" /> Henry - Weather App</span>
       </Link>
