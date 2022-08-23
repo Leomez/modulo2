@@ -1,3 +1,10 @@
+a:hover{
+  text-decoration: none;
+  color: aqua;
+  font-weight: 500;
+}
+
+
 .card {
   margin: 20px;
   width: 18rem;
@@ -11,7 +18,14 @@
 
 .cardTitle {
   margin-bottom: 15px;
+  color: aliceblue;
 }
+
+.cardTitle:hover{
+  color: aqua;
+  font-weight: 400;
+}
+
 
 .closeIcon {
   /* position: relative; */

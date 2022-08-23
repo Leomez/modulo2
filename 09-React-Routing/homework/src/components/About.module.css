@@ -1,0 +1,13 @@
+.cardAbout{
+    display: inline-block;
+    box-sizing: content-box;
+    width: auto;
+    padding: 2.5rem;
+}
+
+.aboutBody{
+    padding: 1rem;
+    background-color: rgba(105, 105, 105, 0.493);
+    text-align: start;
+    margin-top: 2rem;
+}
