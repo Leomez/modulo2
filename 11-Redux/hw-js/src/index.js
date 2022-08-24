@@ -23,7 +23,7 @@ renderContador()
 
 
 // Nos subscribimos al store pasandole la misma funcion. Asi cada vez que llegue una accion, ejecutamos la funcion:
-store.suscribe(renderContador)
+store.subscribe(renderContador)
 
 
 // Por ultimo, utilizamos los botones de nuestro HTML para que cada vez que hagamos click,
@@ -31,5 +31,5 @@ store.suscribe(renderContador)
 let btnIncremento = document.getElementById('incremento');
 let btnDecremento = document.getElementById('decremento');
 
-btnIncremento.onclick = incremento;
-btnDecremento.onclick = decremento
+btnIncremento.onclick = () => store.dispatch(incremento());
+btnDecremento.onclick = () => store.dispatch(decremento())
