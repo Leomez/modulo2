@@ -3,12 +3,13 @@ const GET_MOVIE_DETAIL = 'GET_MOVIE_DETAIL';
 const ADD_MOVIE_FAVORITE = 'ADD_MOVIE-FAVORITE';
 const REMOVE_MOVIE_FAVORITE = 'REMOVE_MOVIE_FAVORITE'
 
-export const getMovies = (titulo) => dispatch => {
-    return fetch(`http://www.omdbapi.com/?&apikey=4352d24e&s=${titulo}`)
+export const getMovies = (title) => dispatch => {
+    return fetch(`http://www.omdbapi.com/?&apikey=4352d24e&s=${title}`)
         .then(res => res.json())
         .then(data => dispatch({
             type: GET_MOVIES,
             payload: data
+            
         }))   
 }
 

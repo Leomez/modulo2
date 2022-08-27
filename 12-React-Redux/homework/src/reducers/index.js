@@ -14,10 +14,9 @@ const initialState = {
 function rootReducer(state = initialState, action) {
     switch (action.type) {
         case GET_MOVIE:
-            console.log(action.payload.Search);
             return {
                 ... state,
-                moviesLoaded: [...state.moviesLoaded, action.payload]
+                moviesLoaded: action.payload.Search
             }
         case GET_MOVIE_DETAIL:
             return {

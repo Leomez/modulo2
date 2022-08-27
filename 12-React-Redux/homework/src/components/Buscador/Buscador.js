@@ -19,8 +19,8 @@ export class Buscador extends Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    getMovies(this.state.title)
-    console.log(this.state.title);
+    this.props.getMovies(this.state.title)
+    console.log(this.props.getMovies(this.state.title));
   }
 
   render() {
@@ -42,7 +42,16 @@ export class Buscador extends Component {
           <button type="submit">BUSCAR</button>
         </form>
         <ul>
-         {console.log(this.props.movies)}
+          
+         {this.props.movies && this.props.movies.map(movie => (
+          <div key={movie.imdbID}>
+            <Link to={`"/movie/${movie.imdbID}"`}>
+              {movie.Title}
+            </Link>
+
+          </div>
+
+         ))}
         </ul>
       </div>
     );
@@ -59,7 +68,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     addMovieFavorite: movieId => dispatch(addMovieFavorite(movieId)),
-    getMovies: (title) => dispatch(getMovies(title))
+    getMovies: title => dispatch(getMovies(title))
   }
 }
 
