@@ -1,7 +1,7 @@
-const GET_MOVIES = 'GET_MOVIES';
-const GET_MOVIE_DETAIL = 'GET_MOVIE_DETAIL';
-const ADD_MOVIE_FAVORITE = 'ADD_MOVIE-FAVORITE';
-const REMOVE_MOVIE_FAVORITE = 'REMOVE_MOVIE_FAVORITE'
+export const GET_MOVIES = 'GET_MOVIES';
+export const GET_MOVIE_DETAIL = 'GET_MOVIE_DETAIL';
+export const ADD_MOVIE_FAVORITE = 'ADD_MOVIE-FAVORITE';
+export const REMOVE_MOVIE_FAVORITE = 'REMOVE_MOVIE_FAVORITE'
 
 export const getMovies = (title) => dispatch => {
     return fetch(`http://www.omdbapi.com/?&apikey=4352d24e&s=${title}`)
@@ -29,11 +29,11 @@ export const addMovieFavorite = (id) => {
     }
 }
 
-export const removeeMovieFavorite = (id) => {
+export const removeMovieFavorite = (id) => {
     return{
         type: REMOVE_MOVIE_FAVORITE,
         payload: id
     }
 }
 
-export default {GET_MOVIES, GET_MOVIE_DETAIL, ADD_MOVIE_FAVORITE, REMOVE_MOVIE_FAVORITE}
+// export default [GET_MOVIES, GET_MOVIE_DETAIL, ADD_MOVIE_FAVORITE, REMOVE_MOVIE_FAVORITE]

@@ -1,7 +1,7 @@
-import GET_MOVIE from "../actions/index";
-import GET_MOVIE_DETAIL from "../actions/index";
-import ADD_MOVIE_FAVORITE from "../actions/index";
-import REMOVE_MOVIE_FAVORITE from "../actions/index";
+import { GET_MOVIES } from "../actions/index";
+import { GET_MOVIE_DETAIL } from "../actions/index";
+import { ADD_MOVIE_FAVORITE } from "../actions/index";
+import { REMOVE_MOVIE_FAVORITE } from "../actions/index";
 
 
 const initialState = {
@@ -13,9 +13,10 @@ const initialState = {
 
 function rootReducer(state = initialState, action) {
     switch (action.type) {
-        case GET_MOVIE:
+        case GET_MOVIES:
+            // console.log(state.moviesLoaded);
             return {
-                ... state,
+                ...state,
                 moviesLoaded: action.payload.Search
             }
         case GET_MOVIE_DETAIL:
