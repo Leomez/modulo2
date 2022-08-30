@@ -5,12 +5,12 @@ import './Favorites.css';
 import { removeMovieFavorite } from "../../actions";
 
 export class ConnectedList extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      title: ""
-    }
-  }
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     title: ""
+  //   }
+  // }
   
   render() {
     return (
@@ -20,8 +20,10 @@ export class ConnectedList extends Component {
           {this.props.movies && this.props.movies.map(movie => {
             return(
               <div key={movie.id}>
+                <Link to={`/movie/${movie.id}`}>   
                 <div>Pelicula: {movie.title} </div>
-                <button onClick={this.props.removeMovieFavorite(movie.id)}>X</button>
+                </Link>
+                <button onClick={() => this.props.removeMovieFavorite(movie.id)}>X</button>
               </div>
             )
           })}

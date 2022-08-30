@@ -2,12 +2,12 @@ import { GET_MOVIES } from "../actions/index";
 import { GET_MOVIE_DETAIL } from "../actions/index";
 import { ADD_MOVIE_FAVORITE } from "../actions/index";
 import { REMOVE_MOVIE_FAVORITE } from "../actions/index";
-
+import { CLEAR_ID } from "../actions/index";
 
 const initialState = {
     moviesFavorites: [],
     moviesLoaded: [],
-    movieDeatail: {}
+    movieDetail: {}
 }
 
 
@@ -22,8 +22,13 @@ function rootReducer(state = initialState, action) {
         case GET_MOVIE_DETAIL:
             return {
                 ...state,
-                movieDeatail: action.payload 
-            }            
+                movieDetail: action.payload 
+            }
+        case CLEAR_ID:
+            return {
+                ...state,
+                movieDetail: ''
+            }                
         case ADD_MOVIE_FAVORITE:
             return {
                 ...state,
